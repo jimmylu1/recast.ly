@@ -1,11 +1,12 @@
+import VideoListEntry from './VideoListEntry.js'
 var VideoList = (props) => (
   <div className="video-list">
-    {/* {props.video.map(example => 
-    <VideoList videos={example} />
-  )}  */}
+    {props.videos.map(entry => <VideoListEntry entry = {entry}/>)}
   </div>
 
 );
+
+
 
 
 
