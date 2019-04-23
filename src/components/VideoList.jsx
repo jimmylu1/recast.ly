@@ -1,13 +1,16 @@
 var VideoList = (props) => (
   <div className="video-list">
-    <div><h5><em>videoListEntry</em> view goes here</h5></div>
-    <div><h5><em>videoListEntry</em> view goes here</h5></div>
-    <div><h5><em>videoListEntry</em> view goes here</h5></div>
-    <div><h5><em>videoListEntry</em> view goes here</h5></div>
-    <div><h5><em>videoListEntry</em> view goes here</h5></div>
+    {/* {props.video.map(example => 
+    <VideoList videos={example} />
+  )}  */}
   </div>
 
 );
+
+
+
+
+
 
 // PropTypes tell other developers what `props` a component expects
 // Warnings will be shown in the console when the defined rules are violated
@@ -23,10 +26,10 @@ export default VideoList;
 
 
 
-/* <div className="video-list">
-{props.video.map(video => (
-  <VideoListEntry title = {props.video.snippet.title}
-    description = {props.video.snippet.description} />
-))}
-</div> */
+//  <div className="video-list">
+// {props.video.map(video => (
+//   <VideoListEntry title = {props.video.snippet.title}
+//     description = {props.video.snippet.description} />
+// ))}
+// </div> 
 
