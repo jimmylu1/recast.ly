@@ -6,7 +6,9 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
-    "test": "live-server --open=./SpecRunner.html --port=8081",
+    "build": "babel . --watch --out-dir compiled --presets=react --ignore=node_modules,compiled --source-maps inline",
+    "start": "live-server",
+    "test": "live-server --open=./SpecRunner.html --port=8080",
     "postinstall": "curl -s https://raw.githubusercontent.com/reactorcore/pomander/master/bin/install | bash"
   },
   "dependencies": {
@@ -17,6 +19,7 @@
     "react-dom": "^0.14.7"
   },
   "devDependencies": {
+    "@babel/preset-react": "^7.0.0",
     "babel-cli": "^6.6.5",
     "babel-plugin-react": "1.0.0",
     "babel-preset-react": "^6.5.0",
